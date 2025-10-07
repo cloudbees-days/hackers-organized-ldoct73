@@ -19,6 +19,14 @@ export const impressionHandler = (reporting) => {
 const options = {
   configurationFetchedHandler: configurationFetchedHandler,
   impressionHandler: impressionHandler,
+  disableSignatureVerification: true,
+  selfManaged: {
+    configurationURL: "https://api.demo1.cloudbees.io/device/get_configuration",
+    serverURL: "https://rox-conf.demo1.cloudbees.io",
+    stateURL: "https://api.demo1.cloudbees.io/device/update_state_store/",
+    analyticsURL: "https://fm-analytics.demo1.cloudbees.io",
+    pushUpdateURL: "https://sdk-notification-service.demo1.cloudbees.io/sse",
+  }
 };
 
 export const Flags = {
